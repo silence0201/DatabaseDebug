@@ -391,19 +391,18 @@
     
     [tableData safe_setObject:@(NO) forKey:@"isEditable"];
     
-    NSMutableArray *rows = @[].mutableCopy;
+    NSMutableArray *rows = [NSMutableArray array];
     
-    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
     //app name
     NSString *displayName = [NSString displayName];
-    NSMutableArray *displayRow = @[].mutableCopy;
+    NSMutableArray *displayRow = [NSMutableArray array];
     [displayRow safe_addObject:@{@"dataType": @"text", @"value": @"Display Name"}];
-    [displayRow safe_addObject:@{@"dataType": @"text", @"value": displayName}];
+    [displayRow safe_addObject:@{@"dataType": @"text", @"value": displayName ?:@""}];
     [rows safe_addObject:displayRow];
     
     //app bundle identifier
     NSString *bundleIdentifer = [NSString identifier];
-    NSMutableArray *bundleRow = @[].mutableCopy;
+    NSMutableArray *bundleRow = [NSMutableArray array];
     [bundleRow safe_addObject:@{@"dataType": @"text", @"value": @"Bundle Identifer"}];
     [bundleRow safe_addObject:@{@"dataType": @"text", @"value": bundleIdentifer}];
     [rows safe_addObject:bundleRow];
@@ -417,7 +416,7 @@
     
     //app build number
     NSString *build = [NSString build];
-    NSMutableArray *buildRow = @[].mutableCopy;
+    NSMutableArray *buildRow = [NSMutableArray array];
     [buildRow safe_addObject:@{@"dataType": @"text", @"value": @"Build"}];
     [buildRow safe_addObject:@{@"dataType": @"text", @"value": build}];
     [rows safe_addObject:buildRow];
@@ -425,7 +424,7 @@
     //document path
     NSArray *pathSearch = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsPath = [pathSearch objectAtIndex:0];
-    NSMutableArray *documentRow = @[].mutableCopy;
+    NSMutableArray *documentRow = [NSMutableArray array];
     [documentRow safe_addObject:@{@"dataType": @"text", @"value": @"Documents"}];
     [documentRow safe_addObject:@{@"dataType": @"text", @"value": documentsPath?documentsPath:@""}];
     [rows safe_addObject:documentRow];
@@ -433,7 +432,7 @@
     //cache path
     NSArray *pathSearchCache = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     NSString *cachePath = [pathSearchCache objectAtIndex:0];
-    NSMutableArray *cacheRow = @[].mutableCopy;
+    NSMutableArray *cacheRow = [NSMutableArray array];
     [cacheRow safe_addObject:@{@"dataType": @"text", @"value": @"Cache"}];
     [cacheRow safe_addObject:@{@"dataType": @"text", @"value": cachePath?cachePath:@""}];
     [rows safe_addObject:cacheRow];
