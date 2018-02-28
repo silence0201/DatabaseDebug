@@ -15,6 +15,8 @@
 		E81923A82045A4B700F7AAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81923A62045A4B700F7AAF9 /* LaunchScreen.storyboard */; };
 		E81923AB2045A4B700F7AAF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E81923AA2045A4B700F7AAF9 /* main.m */; };
 		E81923B52045A53400F7AAF9 /* DatabaseUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E81923B42045A53400F7AAF9 /* DatabaseUtil.m */; };
+		E81923B82046E45B00F7AAF9 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = E81923B72046E45B00F7AAF9 /* Categories.m */; };
+		E81923BA2046E77E00F7AAF9 /* Web.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E81923B92046E77D00F7AAF9 /* Web.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		E81923AA2045A4B700F7AAF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E81923B32045A53400F7AAF9 /* DatabaseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseUtil.h; sourceTree = "<group>"; };
 		E81923B42045A53400F7AAF9 /* DatabaseUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseUtil.m; sourceTree = "<group>"; };
+		E81923B62046E45B00F7AAF9 /* Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		E81923B72046E45B00F7AAF9 /* Categories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
+		E81923B92046E77D00F7AAF9 /* Web.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Web.bundle; sourceTree = "<group>"; };
 		F0DF30778BCB3A7C56DC1641 /* Pods-DatabaseDebugDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseDebugDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DatabaseDebugDemo/Pods-DatabaseDebugDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +98,7 @@
 		E81923B12045A53400F7AAF9 /* DatabaseDebug */ = {
 			isa = PBXGroup;
 			children = (
+				E81923B92046E77D00F7AAF9 /* Web.bundle */,
 				E81923B22045A53400F7AAF9 /* Util */,
 			);
 			path = DatabaseDebug;
@@ -103,6 +109,8 @@
 			children = (
 				E81923B32045A53400F7AAF9 /* DatabaseUtil.h */,
 				E81923B42045A53400F7AAF9 /* DatabaseUtil.m */,
+				E81923B62046E45B00F7AAF9 /* Categories.h */,
+				E81923B72046E45B00F7AAF9 /* Categories.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81923BA2046E77E00F7AAF9 /* Web.bundle in Resources */,
 				E81923A82045A4B700F7AAF9 /* LaunchScreen.storyboard in Resources */,
 				E81923A52045A4B700F7AAF9 /* Assets.xcassets in Resources */,
 				E81923A32045A4B700F7AAF9 /* Main.storyboard in Resources */,
@@ -244,6 +253,7 @@
 				E81923B52045A53400F7AAF9 /* DatabaseUtil.m in Sources */,
 				E81923A02045A4B700F7AAF9 /* ViewController.m in Sources */,
 				E81923AB2045A4B700F7AAF9 /* main.m in Sources */,
+				E81923B82046E45B00F7AAF9 /* Categories.m in Sources */,
 				E819239D2045A4B700F7AAF9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
